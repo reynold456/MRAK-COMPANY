@@ -1,0 +1,64 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif; /* Fuente general */
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Fondo negro */
+    color: #333; /* Color del texto */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('imgsReynolds/FondoReynolds.jpeg'); /* Gradiente + imagen */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+    background-position: center; /* Centra la imagen */
+}
+
+/* Encabezado */
+.Encabezado {
+    background-color: #000000; /* Fondo negro */
+    color: white; /* Texto blanco */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centra el texto */
+    border-bottom: 4px solid #0003b8; /* Línea inferior azul */
+}
+
+
+.Encabezado p {
+    margin: 5px 0; /* Margen superior e inferior */
+    font-size: 1.2em; /* Tamaño del texto */
+}
+
+/* Título principal */
+.TituloPagina{
+    font-size: 3em; /* Tamaño de fuente del título */
+    color: #0003b8; /* Color del título */
+    margin-top: 20px; /* Espacio superior */
+    text-align: left;
+}
+
+/* Estilo para el marco */
+.marco {
+    border: 2px solid #0003b8; /* Borde azul */
+    padding: 15px; /* Espaciado interno */
+    margin: 20px auto; /* Espaciado externo y centrado */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro con transparencia */
+    border-radius: 10px; /* Bordes redondeados */
+    width: 60%; /* Ancho del marco reducido al 60% */
+    box-shadow: 0 4px 6px rgb(0, 19, 189); /* Sombra azul */
+    font-size: 1em; /* Tamaño de fuente */
+    line-height: 1.5; /* Espaciado entre líneas */
+    color: #FFFFFF; /* Color del texto */
+    text-align: justify; /* Justifica el texto dentro del marco */
+}
+
+/* Estilo para los párrafos dentro del marco */
+.marco p {
+    margin-bottom: 20px; /* Espacio entre párrafos */
+    line-height: 1.5; /* Espaciado entre líneas dentro del párrafo */
+}
+
+/* Estilo para la imagen del logo */
+.logo {
+    width: 100px; /* Ajusta el tamaño del logo */
+    float: left; /* Alinea la imagen a la izquierda */
+    margin-right: 15px; /* Espaciado entre la imagen y el texto */
+    display: block; /* Asegura que la imagen se comporte como un bloque */
+}
