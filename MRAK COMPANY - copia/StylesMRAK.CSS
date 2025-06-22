@@ -1,0 +1,189 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #000;
+  padding: 10px 0;
+  text-align: center;
+  color: white;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 32px;
+  width: 100%;
+  padding-bottom: 0;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+.header-content h1 {
+  margin: 0 32px 0 0;
+  font-size: 2.5em;
+  white-space: nowrap;
+}
+
+/* Layout principal: barra lateral y contenido */
+.main-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 220px;
+  background: #111;
+  color: #fff;
+  min-height: 100vh;
+  padding-top: 32px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 16px 24px;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.sidebar a:hover {
+  background: #222;
+}
+
+/* Dropdown para Portafolios */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background-color: #000000;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-top: 0;
+  padding: 0;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-weight: normal;
+}
+
+.dropdown-content a:hover {
+  background-color: #c9bb00;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Contenido principal */
+.content {
+  flex: 1;
+  padding: 40px;
+  background: #fff;
+  color: #000;
+}
+
+.Contenedor {
+  width: 90%;
+  max-width: 900px;
+  margin: 40px auto 0 auto;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgb(97, 96, 96);
+  background: #fff;
+  color: #000;
+  text-align: justify;
+  font-family: "Arial", sans-serif;
+}
+.productos {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los banners bajen si no caben */
+  gap: 24px; /* Espacio entre los banners */
+  justify-content: center; /* Centra los banners horizontalmente */
+  margin: 40px 0;
+}
+
+.producto {
+  background: #fff;
+  border: 1.5px solid #0466c7;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 260px;
+  padding: 18px 14px;
+  text-align: center;
+  transition: box-shadow 0.2s;
+  margin-bottom: 16px;
+}
+
+.producto img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.producto h3 {
+  margin: 10px 0 6px 0;
+  font-size: 1.2em;
+}
+
+.producto .precio {
+  font-size: 1.1em;
+  color: #0466c7;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.producto button {
+  margin: 6px 4px 0 4px;
+  padding: 7px 14px;
+  border-radius: 6px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.producto button:first-child {
+  background: #0466c7;
+  color: #fff;
+}
+
+.producto button:last-child {
+  background: #fff;
+  color: #0466c7;
+  border: 1px solid #0466c7;
+}
+
+.producto button:first-child:hover {
+  background: #004a99;
+}
+
+.producto button:last-child:hover {
+  background: #0466c7;
+  color: #fff;
+}
